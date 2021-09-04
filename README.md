@@ -3,10 +3,15 @@
 Rotating Gold Ring with splitting.js
 
 ## update
-Mousemove Effect
+Mousemove Effect (rotate the ring with the mouse)
+Auto rotate delete
+text-shadow
 
 ## shallow-knowledge
 CSS : preserve-3d
+
+## to do
+rotating only when the mouse is clicked
 
 ## 사용 출처 (ref)
 

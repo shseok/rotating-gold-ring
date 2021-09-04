@@ -1,5 +1,5 @@
 :root{
-    --main-bg-color: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    --main-bg-color: linear-gradient(200deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 }
 
 *{
@@ -14,36 +14,41 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--main-bg-color);
+    background: #191e38;
 }
 
 .circle{
-    border:100px solid#000;
+    /* border:100px solid#000; */
     transform-style: preserve-3d;
-    animation: rotation 8s linear infinite;
-}
-
-@keyframes rotation {
-    0%{
-        transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
-    }
-    100%{
-        transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
-    }
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
 }
 
 .circle .char{
     position: absolute;
     top: 0;
     left: 0;
-    color: var(--main-bg-color);
-    background: #fff;
+    color: #fff;
+    background: var(--main-bg-color);
     font-size: 5em;
     padding: 5px 12px;
-    border-top: 4px solid rgb(49, 43, 43);
-    border-bottom: 4px solid rgb(49, 43, 43);
+    border-top: 4px solid #FCF6BA;
+    border-bottom: 4px solid #FCF6BA;
     /* transform-style: preserve-3d; */
     transform-origin: center;
     transform: rotateY(calc(var(--char-index) * 12deg)) translateZ(250px);
-    
+    text-shadow: 450px 150px 5px rgba(255, 255 ,255, 0.5),
+    600px 100px 0 rgba(255, 255 ,255, 0.5),
+    600px 200px 10px rgba(255, 255 ,255, 0.5),
+    400px 500px 0 rgba(255, 255 ,255, 0.5),
+    500px 350px 0 rgba(255, 255 ,255, 0.5),
+    200px 500px 0 rgba(255, 255 ,255, 0.5),
+    50px 600px 0 rgba(255, 255 ,255, 0.5),
+    450px -150px 5px rgba(255, 255 ,255, 0.5),
+    600px -100px 0 rgba(255, 255 ,255, 0.5),
+    600px -200px 10px rgba(255, 255 ,255, 0.5),
+    400px -500px 0 rgba(255, 255 ,255, 0.5),
+    500px -350px 0 rgba(255, 255 ,255, 0.5),
+    200px -500px 0 rgba(255, 255 ,255, 0.5),
+    50px -600px 0 rgba(255, 255 ,255, 0.5);
+
 }
